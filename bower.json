@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Plugin de jQuery para animacion de textos",
   "ignore": [
-    "docs"
+    "!js/*"
   ],
   "dependencies": {
     "jquery": "v3.1.0",

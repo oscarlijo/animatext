@@ -1,0 +1,12 @@
+{
+  "name": "animatext.js",
+  "version": "0.0.1",
+  "description": "Plugin de jQuery para animacion de textos",
+  "ignore": [
+    "docs"
+  ],
+  "dependencies": {
+    "jquery": "v3.1.0",
+    "animate.css": "3.5.2"
+  }
+}

@@ -1,12 +1,661 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
-</head>
-<body>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/main.min.css">
 
-</body>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="row">
+                <ul class="nav navbar-nav">
+<!--                     <li class="active"><a href="#inicio"><span class="fa fa-home iconMenu"></span>INICIO</a></li>
+                    <li><a href="#markExamples1"><span class="fa fa-graduation-cap iconMenu"></span>CONOCIMIENTOS</a></li>
+                    <li><a href="#markExamples2"><span class="fa fa-wordpress iconMenu"></span>BLOG</a></li>
+                    <li><a href="#markExamples3"><span class="fa fa-clock-o iconMenu"></span>EXPERIENCIA</a></li>
+                    <li class="hidden-xs"><a href="#menuProyectos"><span class="fa fa fa-briefcase iconMenu"></span>PROYECTOS</a></li>
+                    <li><a href="#contacto"><span class="fa fa-envelope-square iconMenu"></span>CONTACTO</a></li> -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+<!--                     <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li> -->
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Add your site or application content here -->
+        <header id="header" class="header">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <img src="img/line.svg" style="left: 50%; position: absolute; margin-top: 40px; width: 104vh; margin-left: -52vh;">
+                        <h1 class="long-shadow"><span class="animateTitle1">ANIMA</span><span class="animateTitle2">TEXT</span></h1>
+                        <!-- <h2>El plugin de jQuery para animar textos...</h2> -->
+                        <div style="left: 50%; position: absolute; border-bottom: 3px solid white; width: 92vh; margin-left: -47vh; margin-top: 21vh;"></div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- /header -->
+        <div class="container-fluid" style="background-color:#4C6A92; box-shadow: 0 3px 4px #555;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> -->
+                        <br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="spacer4"></div>
+                        <h3 style="line-height:34px; text-align:center;"><strong>animatext.js</strong> es un plugin de jQuery compatible con Zepto.js hecho con CoffeeScript</h3>
+                        <div class="spacer1"></div>
+                        <img src="img/jquery_logo.png" alt="" width="180" style="margin-right:40px;">
+                        <img src="img/zepto_logo.png" alt="" width="180" style="margin-right:40px;">
+                        <img src="img/coffee_logo.png" alt="" width="180">
+                    </div>
+                    <div class="col-md-4 col-md-offset-1">
+                        <div class="spacer6"></div>
+                        <div style="background-color: rgba(255,255,255,0.5); text-align:center; padding: 25px 30px; border-radius: 6px; box-shadow: 3px 3px 4px #555;">
+                            <h4 style="line-height:24px;">La version minificada de animatext pesa <strong>menos de 3kb</strong>!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacer3"></div>
+        <div id="markExamples1" class="markMenu"></div>
+        <div id="clipped1" class="container-fluid sectionTitle"><h2 class="medium-shadow">INSTALACION</h2></div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row" style="margin-top: -60px;">
+                    <div class="col-md-8 boxWhite">
+                        <h4><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;&nbsp;Formas de instalar la librería</strong></h4><hr>
+                        <p>Desde el instalador de paquetes de node:<br></p>
+                        <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                        <figure class="highlight">
+                            <pre id="zc1"><code class="html">npm install animatext</code></pre>
+                        </figure>
+                        <div class="spacer1"></div>
+                        <p>Usando bower:<br></p>
+                        <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                        <figure class="highlight">
+                            <pre id="zc1"><code class="html">bower install animatext</code></pre>
+                        </figure>
+                        <div class="spacer1"></div>
+                        <p>Desde un CDN:<br></p>
+                        <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                        <figure class="highlight">
+                            <pre id="zc1"><code class="html">//cdn.jsdelivr.net/animatext/latest/animatext.min.js</code></pre>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 boxTransparent">
+                        <h4><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;&nbsp;Descargar la librería</strong></h4><hr>
+                        <p>Desde esta página:<br></p>
+                        <a href="#" title="Descargar animatext desde github" style="cursor:pointer">
+                            <div style="background-color: rgba(255,255,255,0.5); text-align:center; padding: 15px 0; border-radius: 6px; box-shadow: 3px 3px 4px #555;">
+                                <img src="img/github-logo.svg" alt="" width="70" style="margin-right:17px;">
+                                <img src="img/github-text.svg" alt="" width="90">
+                            </div>
+                        </a>
+                        <div class="spacer3"></div>
+                        <p>Desde la página de Github:<br></p>
+                        <a href="#" title="Descargar animatext desde github" style="cursor:pointer">
+                            <div style="background-color: rgba(255,255,255,0.5); text-align:center; padding: 15px 0; border-radius: 6px; box-shadow: 3px 3px 4px #555;">
+                                <img src="img/github-logo.svg" alt="" width="70" style="margin-right:17px;">
+                                <img src="img/github-text.svg" alt="" width="90">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="spacer3"></div>
+        <div id="markExamples2" class="markMenu"></div>
+        <div id="clipped2" class="container-fluid sectionTitle">
+            <h2 class="medium-shadow" style="padding-right:20%; box-sizing:border-box">INICIALIZACION</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+
+                <div class="row" style="margin-top: -120px;">
+
+                    <!-- PROPIEDAD MODE -->
+                    <div class="spacer5"></div>
+                    <div class="col-md-8 boxWhite">
+                        <h4>INICIALIZACION DE LA LIBRERIA</h4><hr>
+                        <p>Para inicializar animatext unicamente debemos cargar el archivo animatext.min.js si estamos en un entorno productivo, o el archivo animatext.js si estamos desarrollando y queremos modificar la libería.<br>Unicamente debemos cargar un archivo js, pero hay que tener en cuenta que esta librería tiene dos dependencias, la primera al tratarse de un plugin es cargar previamente la librería para la que fue desarrollado, en este caso es compatible tanto con jquery como con zepto.js<br>En segundo lugar para realizar las animaciones esta librería se apoya en animate.css de manera que tambien lo tendremos que incorporar a nuestra pagina. <br><br>Despues podemos arrancar sobre uno o varios elementos del dom el plugin con el siguiente codigo:<br><br></p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+                                    <pre id="zc1"><code class="javascript">$(".mis-elementos").animatext();</code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="html">
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>TITULO</title>
+        <link rel="stylesheet" href="path/animate.min.css">
+    </head>
+    <body>
+        <h1 class="elemento">ANIMATEXT!</h1>
+        <script src="path/jquery.min.js"></script>
+        <script src="path/animatext.min.js"></script>
+        <script>
+            $(".elemento").animatext();
+        </script>
+    </body>
+</html> -->
+</code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="spacer3"></div>
+        <div id="markExamples3" class="markMenu"></div>
+        <div id="clipped3" class="container-fluid sectionTitle">
+            <h2 class="medium-shadow" style="padding-left:20%; box-sizing:border-box">EJEMPLOS</h2>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+
+                <div class="row" style="margin-top: -170px;">
+
+                    <!-- PROPIEDAD MODE -->
+                    <div class="spacer5"></div>
+                    <div class="col-md-8 boxWhite">
+                        <h4><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;Propiedad <strong>mode</strong></h4><hr>
+                        <p>La propiedad mode puede tomar dos valores, estos son "chars" y "words", por defecto esta establecido el primero, con ello estamos definiendo si la animacion queremos que actue sobre las letras o sobre las palabras del texto.<br><br>Veamos como se comportan:<br><br></p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".modetxt1").animatext({
+    mode: "chars",
+    speed: 150,
+    effect: 'flipInX',
+    infinite: true
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h4 class="modetxt1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+                                <br><small>La propiedad mode se establece a 'chars'</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".modetxt2").animatext({
+    mode: "words",
+    speed: 300,
+    effect: 'flipInX',
+    infinite: true
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h4 class="modetxt2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+                                <br><small>La propiedad mode se establece a 'words'</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- PROPIEDAD GROUP -->
+                    <div class="spacer3"></div>
+                    <div class="col-md-8 boxWhite">
+                        <h4><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;Propiedad <strong>group</strong></h4><hr>
+                        <p>Esta es la propiedad más complicada de entender ya que cambia el concepto de como se instancia el plugin, es un booleano que por defecto esta como false, cuando no lo declaramos o lo declaramos false actua sobre un elemento del DOM, mientras que si lo definimos a true lo que va a hacer es animar distintos elementos del DOM como si de caracteres se tratara.<br><br>Para entenderlo mejor pensemos en un caso practico, imaginemos que queremos animar un texto que cuyos caraceres estan en distintas posiciones o tienen estilos distintos, para hacer eso no podemos usar un unico elemento html sino que debemos declarar las letras por separado con posicionamientos absolutos y atributos diferentes, en ese caso es cuando nos resultara muy util usar este parametro, vemos el resultado:<br><br></p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".grouptxt").animatext({
+    group: true,
+    speed: 200,
+    effect: 'swing',
+    infinite: true,
+    timeToRelaunch: 4000
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <div class="spacer6"></div>
+                                <div style="position:relative">
+                                    <span class="grouptxt" style="font-size:48px; top: -7vh; left:25px; font-style:italic; color:#52C;">A</span>
+                                    <span class="grouptxt" style="font-size:38px; top: -8vh; left:50px; color:#44C;">N</span>
+                                    <span class="grouptxt" style="font-size:46px; top: -10vh; left:74px; color:#0AD;">I</span>
+                                    <span class="grouptxt" style="font-size:53px; top: -9vh; left:85px; color:#15C;">M</span>
+                                    <span class="grouptxt" style="font-size:40px; top: -7vh; left:120px; font-weight:bold; color:#337;">A</span>
+                                    <span class="grouptxt" style="font-size:38px; top: -9vh; left:145px; font-style:italic; color:#51F;">T</span>
+                                    <span class="grouptxt" style="font-size:40px; top: -8vh; left:170px; color:#209;">E</span>
+                                    <span class="grouptxt" style="font-size:85px; top: -10vh; left:190px; color:#33A; font-weight:bold;">X</span>
+                                    <span class="grouptxt" style="font-size:44px; top: -10vh; left:225px; color:#00F;">T</span>
+                                </div>
+                                <br><small>La propiedad group anima elementos independientes</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- PROPIEDAD ONSUCESS -->
+                    <div class="spacer3"></div>
+                    <div class="col-md-8 boxWhite">
+                        <h4><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;Propiedad <strong>onSuccess</strong></h4><hr>
+                        <p>La propiedad onSuccess es una funcion que se ejecuta cuando el plugin termia de animar el texto, de manera que podemos realizar la logica que creamos conveniente.<br><br>Un ejemplo de lo que podemos hacer con ella lo tenemos en el propio titulo de esta página donde usamos la funcion de callback para ejecutar en cadena varias animaciones de texto, como se puede apreciar primero se animó el texto "anima" y a continuacion la palabra "text", el código usado para conseguir este comportamiento es el siguiente:<br><br></p>
+
+                        <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                        <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".animateTitle1").animatext({
+    speed: 300,
+    effect: 'flipInY',
+    reverse: true,
+    onSuccess: function(){
+        $(".animateTitle2").animatext({
+            speed: 150,
+            effect: 'rollIn',
+        });
+    }
+});
+</code></pre>
+                        </figure>
+
+                    </div>
+                    <div class="spacer3"></div>
+                    <div class="col-md-8 boxWhite">
+                        <h4><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;Propiedad <strong>speed</strong></h4><hr>
+                        <p>Como bien indica su nombre es la velocidad con la que se ejecuta el efecto, para ser precisos es el tiempo en milisegundos que tarda cada caracter en mostrarse.<br>Los siguientes ejemplos permiten ver el comportamiento cuando variamos este parámetro...</p>
+
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".speedtxt1").animatext({
+    speed: 100,
+    effect: 'bounceIn',
+    infinite: true
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="speedtxt1">ANIMATEXT</h3>
+                                <br><small>Un caracter es mostrado cada decima de segundo...</small>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".speedtxt2").animatext({
+    speed: 500,
+    effect: 'bounceIn',
+    infinite: true
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="speedtxt2">ANIMATEXT</h3>
+                                <br><small>Un caracter es mostrado cada medio segundo...</small>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".speedtxt3").animatext({
+    speed: 1000,
+    effect: 'bounceIn',
+    infinite: true
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="speedtxt3">ANIMATEXT</h3>
+                                <br><small>Un caracter es mostrado cada segundo...</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="spacer3"></div>
+                    <div class="col-md-8 boxWhite">
+                        <h4><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;Propiedad <strong>reverse</strong></h4><hr>
+                        <p>La propiedad reverse invierte el órden en el que se animan las letras, es decir, que en vez de animarse de izquierda a derecha como es habitual, lo harían de derecha a izquierda, es un booleano que por defecto se establece a false, el siguiente ejemplo muestra cual es el resultado:<br><br></p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".reversetxt1").animatext({
+    speed: 300,
+    effect: 'tada',
+    reverse: true,
+    infinite: true
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="reversetxt1">ANIMATEXT</h3>
+                                <br><small>La propiedad reverse esta a 'true'</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".reversetxt2").animatext({
+    speed: 300,
+    effect: 'tada',
+    reverse: false,
+    infinite: true
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="reversetxt2">ANIMATEXT</h3>
+                                <br><small>La propiedad reverse esta a 'false'</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- PROPIEDAD INFINITE -->
+                    <div class="spacer3"></div>
+                    <div class="col-md-8 boxWhite">
+                        <h4><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;Propiedad <strong>infinite</strong></h4><hr>
+                        <p>La propiedad infinite establece que la animación se produzca indefinidamente, de manera que al finalizar vuelve a empezar, al igual que reverse es un booleano y si no lo declaramos su valor por defecto es false.<br><br>En el siguiente ejemplo podemos ver su efecto:<br><br></p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".infinitetxt1").animatext({
+    speed: 300,
+    effect: 'rotateIn',
+    infinite: true
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="infinitetxt1">ANIMATEXT</h3>
+                                <br><small>La propiedad infinite esta a 'true'</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".infinitetxt2").animatext({
+    speed: 300,
+    effect: 'rotateIn',
+    infinite: false
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="infinitetxt2">ANIMATEXT</h3>
+                                <br><small>La propiedad infinite esta a 'false'</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROPIEDAD TIMETORELAUNCH -->
+                    <div class="spacer3"></div>
+                    <div class="col-md-8 boxWhite">
+                        <h4><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;Propiedad <strong>timeToRelaunch</strong></h4><hr>
+                        <p>La propiedad timeToRelaunch está muy relacionada con la propiedad infinite, como vimos en el ejemplo anterior al poner infinte a true la animacion se vuelve a lanzar una vez que termina de forma indefinida, pero es posible que queramos que entre que termina y vuelve a arrancar pase un tiempo para que el texto completo este visible en pantalla unos segundos, el timeToRelaunch sirve para precisamente esto especificando este tiempo en milisegundos.<br><br>Por defecto el plugin establece 2000, por lo que si no especificamos nada entre animaciones espera 2 segundos, a continuación un par de ejemplos:<br><br></p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".infinitetmr1").animatext({
+    speed: 200,
+    infinite: true,
+    timeToRelaunch: 0
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="infinitetmr1">ANIMATEXT</h3>
+                                <br><small>Establecemos 0 y el tiempo entre animaciones desaparece</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".infinitetmr2").animatext({
+    speed: 200,
+    infinite: true,
+    timeToRelaunch: 3000
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="infinitetmr2">ANIMATEXT</h3>
+                                <br><small>Establecemos un tiempo de espera de 3 segundos</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- PROPIEDAD INITDELAY -->
+                    <div class="spacer3"></div>
+                    <div class="col-md-8 boxWhite">
+                        <h4><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;Propiedad <strong>initDelay</strong></h4><hr>
+                        <p>Su funcionamiento es muy sencillo, se trata del tiempo en milisegundos que tarda la animacion en comenzar por primera vez.<br><br>Por defecto el plugin establece a 0 el tiempo, de manera que si no indicamos nada la animacion comienza automaticamente sin retardos, en la práctica se usa así:<br><br></p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".initdelaytxt1").animatext({
+    speed: 200,
+    infinite: true,
+    initDelay: 0
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="initdelaytxt1">ANIMATEXT</h3>
+                                <br><small>La animacion comienza automaticamente sin tiempos de espera</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".initdelaytxt2").animatext({
+    speed: 200,
+    infinite: true,
+    initDelay: 5000
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="initdelaytxt2">ANIMATEXT</h3>
+                                <br><small>La animacion tarda 5 segundos en comenzar</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="spacer10"></div>
+        <div class="container-fluid" style="background-color:#4C6A92;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div style="position:relative">
+                            <img src="img/maquina.svg" style="position: absolute; top: 0; margin-top: -18%; width: 30%; left: 100%; margin-left: -35%;"></span>
+                        </div>
+                        <h2 class="sloganAnimatext" style="padding: 1vh 0 2.5vh 20vh; color: white; letter-spacing: 0.8px;">Dale vida a tus textos con animatext!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="spacer5"></div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="spacer2"></div>
+                        <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12 social">
+                            <h4>Contáctame!</h4><hr>
+                            <form id="formContacto" class="form-horizontal" method="POST" role="form" action="javascript:enviarMail();">
+
+                            <div class="form-group">
+                            <label for="footer_email" class="col-md-2 control-label">Email</label>
+                            <div class="col-md-10">
+                              <input class="form-control" id="footer_email" name="footer_email" placeholder="Email de contacto" required="" type="email">
+                            </div>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="footer_asunto" class="col-md-2 control-label">Asunto</label>
+                            <div class="col-md-10">
+                              <input class="form-control" id="footer_asunto" name="footer_asunto" placeholder="Asunto" pattern=".{10,}" required="" title="Debe contener al menos 10 caracteres" type="text">
+                            </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="footer_contenido" class="col-md-2 control-label">Contenido</label>
+                                <div class="col-md-10">
+                                    <textarea id="footer_contenido" name="footer_contenido" class="form-control" rows="3" placeholder="Escriba aquí su Mensaje..." required=""></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+<!--                                     <div id="captcha">
+                                        <div class="g-recaptcha" data-sitekey="6LdHTQMTAAAAAOKEiPh_UZP3MmKQAtfTrrszXmZS" data-theme="dark"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LdHTQMTAAAAAOKEiPh_UZP3MmKQAtfTrrszXmZS&amp;co=aHR0cDovL3d3dy5vc2Nhcmxpam8uY29tOjgw&amp;hl=es&amp;v=r20161123095123&amp;theme=dark&amp;size=normal&amp;cb=hudyojy3ifum" title="widget del recaptcha" role="presentation" scrolling="no" name="undefined" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                  <button type="submit" class="btn btn-default">Enviar</button>
+                                </div>
+                            </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <p>Copyright&nbsp;&nbsp;<span class="glyphicon glyphicon-copyright-mark"></span>&nbsp;&nbsp;2017&nbsp; | &nbsp;Óscar Lijó Busto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ZeroClipboard.min.js"></script>
+        <script src="js/highlight.js"></script>
+        <script src="js/animatext.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

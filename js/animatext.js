@@ -10,11 +10,12 @@
         timeToRelaunch: 2000,
         reverse: false,
         infinite: false,
+        random: false,
         onBegin: function() {},
         onSuccess: function() {}
       }, options);
       animaText = function(element) {
-        var animatedElements, animatedWords, animationInProgress, checkInView, cutText, doAnimation, paragraphs, relaunchAnimation;
+        var animatedElements, animatedElementsBuffer, animatedWords, animationInProgress, checkInView, cutText, doAnimation, j, paragraphs, randomIndex, randomIterations, ref, relaunchAnimation, scale;
         settings.onBegin();
         animatedElements = [];
         animationInProgress = false;
@@ -62,8 +63,18 @@
             });
           }
         }
-        if (settings.reverse) {
+        if (settings.reverse && !settings.random) {
           animatedElements.reverse();
+        }
+        if (settings.random) {
+          animatedElementsBuffer = [];
+          randomIterations = animatedElements.length;
+          for (scale = j = ref = randomIterations; ref <= 1 ? j <= 1 : j >= 1; scale = ref <= 1 ? ++j : --j) {
+            randomIndex = Math.floor(Math.random() * animatedElements.length);
+            animatedElementsBuffer.push(animatedElements[randomIndex]);
+            animatedElements.splice(randomIndex, 1);
+          }
+          animatedElements = animatedElementsBuffer;
         }
         relaunchAnimation = function(element) {
           if (settings.group) {

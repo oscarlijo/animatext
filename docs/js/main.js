@@ -72,6 +72,20 @@
     infinite: true
   });
 
+  $(".randomtxt1").animatext({
+      speed: 500,
+      effect: 'lightSpeedIn',
+      random: true,
+      infinite: true
+  });
+
+  $(".randomtxt2").animatext({
+      speed: 300,
+      effect: 'rubberBand',
+      random: true,
+      infinite: true
+  });
+
   $('.infinitetxt1').animatext({
     speed: 300,
     effect: 'rotateIn',

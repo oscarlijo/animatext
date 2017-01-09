@@ -20,16 +20,14 @@
           <div class="container">
             <div class="row">
                 <ul class="nav navbar-nav">
-<!--                     <li class="active"><a href="#inicio"><span class="fa fa-home iconMenu"></span>INICIO</a></li>
-                    <li><a href="#markExamples1"><span class="fa fa-graduation-cap iconMenu"></span>CONOCIMIENTOS</a></li>
-                    <li><a href="#markExamples2"><span class="fa fa-wordpress iconMenu"></span>BLOG</a></li>
-                    <li><a href="#markExamples3"><span class="fa fa-clock-o iconMenu"></span>EXPERIENCIA</a></li>
-                    <li class="hidden-xs"><a href="#menuProyectos"><span class="fa fa fa-briefcase iconMenu"></span>PROYECTOS</a></li>
-                    <li><a href="#contacto"><span class="fa fa-envelope-square iconMenu"></span>CONTACTO</a></li> -->
+                    <li class="active"><a href="#inicio"><span class="glyphicon glyphicon-home"></span> &nbsp;Inicio</a></li>
+                    <li><a href="#markExamples1"><span class="glyphicon glyphicon-cog"></span> &nbsp;Instalación</a></li>
+                    <li><a href="#markExamples2"><span class="glyphicon glyphicon-share-alt"></span> &nbsp;Inicializacion</a></li>
+                    <li><a href="#markExamples3"><span class="glyphicon glyphicon-blackboard"></span> &nbsp;Ejemplos</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-<!--                     <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li> -->
+                    <li><a href="http://www.oscarlijo.com/">Author</a></li>
+                    <li><a href="https://github.com/oscarlijo/animatext">Github</a></li>
                 </ul>
             </div>
           </div>
@@ -380,6 +378,56 @@
 
                     </div>
 
+
+                    <!-- PROPIEDAD RANDOM -->
+                    <div class="spacer3"></div>
+                    <div class="col-md-8 boxWhite">
+                        <h4><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;Propiedad <strong>random</strong></h4><hr>
+                        <p>La propiedad random desordena de forma aleatoria el orden de aparici&oacute;n de las letras, lo que quiere decir que el patr&oacute;n de aparici&oacute;n varia cada vez que recargamos la p&aacute;gina, por defecto su valor es <em>false</em>, veamos unos ejemplos de como se comporta:<br><br></p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".randomtxt1").animatext({
+    speed: 500,
+    effect: 'lightSpeedIn',
+    random: true,
+    infinite: true
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="randomtxt1">ANIMATEXT</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>CODIGO</h5>
+                                <div class="zero-clipboard"><span class="btn-clipboard" data-clipboard-target="zc1">Copiar</span></div>
+                                <figure class="highlight">
+<pre id="zc1"><code class="javascript">$(".randomtxt2").animatext({
+    speed: 300,
+    effect: 'rubberBand',
+    random: true,
+    infinite: true
+});
+</code></pre>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>RESULTADO</h5>
+                                <h3 class="randomtxt2">ANIMATEXT</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROPIEDAD REVERSE -->
                     <div class="spacer3"></div>
                     <div class="col-md-8 boxWhite">
                         <h4><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;Propiedad <strong>reverse</strong></h4><hr>

@@ -7,6 +7,17 @@
     "!js/",
     "!js/*"
   ],
+  "homepage": "http://www.oscarlijo.com/animatext/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscarlijo/animatext.git"
+  },
+  "authors": [
+    {
+      "name": "Óscar Lijó",
+      "url": "http://www.oscarlijo.com/"
+    }
+  ],
   "dependencies": {
     "jquery": "v3.1.0",
     "animate.css": "3.5.2"
